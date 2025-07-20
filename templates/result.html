@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanıtım Sayfası</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Merhaba {{ ad }}!</h1>
+        <p><strong>Yaş:</strong> {{ yas }}</p>
+        <p><strong>Şehir:</strong> {{ sehir }}</p>
+        <p><strong>Hobilerin:</strong> {{ hobiler }}</p>
+    </div>
+</body>
+</html>

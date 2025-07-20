@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kendini Tanıt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kendini Tanıt</h1>
+        <form action="/tanitim" method="POST">
+            <label>Adın:</label><br>
+            <input type="text" name="ad" required><br><br>
+
+            <label>Yaşın:</label><br>
+            <input type="number" name="yas" required><br><br>
+
+            <label>Şehir:</label><br>
+            <input type="text" name="sehir" required><br><br>
+
+            <label>Hobilerin:</label><br>
+            <textarea name="hobiler" rows="4" required></textarea><br><br>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
